@@ -30,7 +30,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Init workspace when container is first made.
-	"postCreateCommand": "catkin init && vcs import < repos.yaml && echo '1234\n' | sudo -S rosdep install --from-paths src --ignore-src -r -y",
+	"postCreateCommand": "cd src/Ohm && catkin init && vcs import < repos.yaml && echo '1234\n' | sudo -S rosdep install --from-paths src --ignore-src -r -y",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }

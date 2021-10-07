@@ -44,7 +44,7 @@ RUN sudo apt update && sudo apt-get install -y libraw1394-11 \
     libgtkglextmm-x11-1.2-dev libusb-1.0-0
 
 # Install the lib itself
-COPY /src/white_line_detection/flycapture2-2.13.3.31-amd64 flycapture2
+COPY /src/Ohm/white_line_detection/flycapture2-2.13.3.31-amd64 flycapture2
 RUN cd flycapture2 && yes $'yes\nno' | sudo sh install_flycapture.sh 
 
 ########
