@@ -1,3 +1,4 @@
 [submodule "src/Ohm"]
 	path = src/Ohm
 	url = https://github.com/iscumd/Ohm.git
+	branch = master
