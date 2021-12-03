@@ -36,16 +36,16 @@ ant git libopenexr-dev libeigen3-dev libgstreamer1.0-dev libgstreamer-plugins-ba
 
 #######################
 # Install flycapture2 #
-#######################
+####################### This code is currently unused, just here if we just need to install another flir sdk. 
 
 # Install listed deps
-RUN sudo apt update && sudo apt-get install -y libraw1394-11 \
-    ffmpeg libgtkmm-2.4-dev libglademm-2.4-dev \
-    libgtkglextmm-x11-1.2-dev libusb-1.0-0
+#RUN sudo apt update && sudo apt-get install -y libraw1394-11 \
+#    ffmpeg libgtkmm-2.4-dev libglademm-2.4-dev \
+#    libgtkglextmm-x11-1.2-dev libusb-1.0-0
 
 # Install the lib itself
-COPY /src/Ohm/white_line_detection/flycapture2-2.13.3.31-amd64 flycapture2
-RUN cd flycapture2 && yes $'yes\nno' | sudo sh install_flycapture.sh 
+#COPY /src/Ohm/white_line_detection/flycapture2-2.13.3.31-amd64 flycapture2
+#RUN cd flycapture2 && yes $'yes\nno' | sudo sh install_flycapture.sh 
 
 ########
 # Misc #
